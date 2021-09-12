@@ -1,0 +1,162 @@
+[
+    {
+        "name": "milanesa",
+        "price": 30.00,
+        "category": "TORTAS"
+    },
+    {
+        "name": "lomo",
+        "price": 30.00,
+        "category": "TORTAS"
+    },
+    {
+        "name": "adobada",
+        "price": 30.00,
+        "category": "TORTAS"
+    },
+    {
+        "name": "chorizo",
+        "price": 30.00,
+        "category": "TORTAS"
+    },
+    {
+        "name": "queso",
+        "price": 25.00,
+        "category": "TORTAS"
+    },
+    {
+        "name": "jamon",
+        "price": 25.00,
+        "category": "TORTAS"
+    },
+    {
+        "name": "combinada",
+        "price": 30.00,
+        "category": "TORTAS"
+    },
+    {
+        "name": "cubana",
+        "price": 38.00,
+        "category": "ESPECIALIDADES"
+    },
+    {
+        "name": "tortiburger",
+        "price": 38.00,
+        "category": "ESPECIALIDADES"
+    },
+    {
+        "name": "bbq",
+        "price": 35.00,
+        "category": "ESPECIALIDADES"
+    },
+    {
+        "name": "hawaiana",
+        "price": 35.00,
+        "category": "ESPECIALIDADES"
+    },
+    {
+        "name": "papas a la francesa",
+        "price": 15.00,
+        "category": "COMPLEMENTOS"
+    },
+    {
+        "name": "aros de cebolla",
+        "price": 20.00,
+        "category": "COMPLEMENTOS"
+    },
+    {
+        "name": "gajos sazonados",
+        "price": 20.00,
+        "category": "COMPLEMENTOS"
+    },
+    {
+        "name": "refresco de 600 mL",
+        "price": 15.00,
+        "category": "BEBIDAS"
+    },
+    {
+        "name": "refresco de vidrio",
+        "price": 10.00,
+        "category": "BEBIDAS"
+    },
+    {
+        "name": "refresco de 237 mL",
+        "price": 8.00,
+        "category": "BEBIDAS"
+    },
+    {
+        "name": "malteada",
+        "price": 18.00,
+        "category": "BEBIDAS"
+    },
+    {
+        "name": "jugo del valle",
+        "price": 12.00,
+        "category": "BEBIDAS"
+    },
+    {
+        "name": "café",
+        "price": 10.00,
+        "category": "BEBIDAS"
+    },
+    {
+        "name": "5 enchiladas verdes de pollo",
+        "price": 45.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "5 enchiladas rojas de queso",
+        "price": 45.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "6 flautas de pollo",
+        "price": 45.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "6 flautas de deshebrada",
+        "price": 45.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "hamburguesa",
+        "price": 30.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "hamburguesa especial",
+        "price": 40.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "hamburguesa de pollo",
+        "price": 40.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "sincronizada sencilla",
+        "price": 15.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "sincronizada doble",
+        "price": 30.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "quesadilla con carne",
+        "price": 25.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "sandwich",
+        "price": 22.00,
+        "category": "OTROS"
+    },
+    {
+        "name": "sandwich de pollo",
+        "price": 30.00,
+        "category": "OTROS"
+    }
+]

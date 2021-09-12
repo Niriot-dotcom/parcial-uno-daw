@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu / Mi torta express</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="../index.html">Inicio</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#"><img
+                    src="https://scontent.fbjx1-1.fna.fbcdn.net/v/t1.18169-9/23844939_782448155271447_6449721653886146239_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=973b4a&_nc_ohc=OvlM0U3fRHoAX-_quzE&_nc_ht=scontent.fbjx1-1.fna&oh=7b462062a21316f4183bda317f81e514&oe=615E25B0"
+                    width="30" height="30" class="d-inline-block align-top" alt="">Mi torta express</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div id="menuContainer"></div>
+            <script>
+                fetch('../json/products.json')
+                    .then(function (response) { return response.json(); })
+                    .then(function (data) { appendData(data); })
+                    .catch(function (err) { alert('error: ' + err); });
+
+                function appendData(data) {
+                    var container = document.getElementById("menuContainer");
+                    container.className = "menu-container";
+
+                    for (var i = 0; i < data.length; i++) {
+                        var divCard = document.createElement("div");
+                        divCard.className = 'card';
+                            var divProduct = document.createElement("div");
+                            divProduct.className = 'product'
+                                var divCircle = document.createElement("div");
+                                divCircle.className = 'circle';
+                                var imgProduct = document.createElement("img");
+                                imgProduct.src = "../images/" + data[i].category + ".png";
+                                imgProduct.alt = 'product';
+                            divProduct.appendChild(divCircle)
+                            divProduct.appendChild(imgProduct)
+
+                            var divInfo = document.createElement("div");
+                            divInfo.className = 'info'
+                                var h1Title = document.createElement("h1");
+                                h1Title.className = 'title';
+                                h1Title.innerHTML = data[i].name;
+                                var h3Text = document.createElement("h3");
+                                h3Text.innerHTML = data[i].category;
+                                var h4Price = document.createElement("h4");
+                                h4Price.innerHTML = data[i].price + ".00 MXN";
+                            divInfo.appendChild(h1Title);
+                            divInfo.appendChild(h3Text);
+                            divInfo.appendChild(h4Price);
+                        divCard.appendChild(divProduct);
+                        divCard.appendChild(divInfo);
+                        container.appendChild(divCard);
+                    }
+                }
+            </script>
+        </section>
+</body>
+</html>

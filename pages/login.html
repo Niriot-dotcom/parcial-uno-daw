@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Mi torta express</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="../index.html">Inicio</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#"><img
+                    src="https://scontent.fbjx1-1.fna.fbcdn.net/v/t1.18169-9/23844939_782448155271447_6449721653886146239_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=973b4a&_nc_ohc=OvlM0U3fRHoAX-_quzE&_nc_ht=scontent.fbjx1-1.fna&oh=7b462062a21316f4183bda317f81e514&oe=615E25B0"
+                    width="30" height="30" class="d-inline-block align-top" alt="">Mi torta express</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Registrarse</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="login-container">
+        <h1>Iniciar sesion</h1>
+        <form method="POST">
+            <div class="text-field">
+                <input required id="user" type="text" name="user">
+                <span></span>
+                <label>Usuario</label>
+            </div>
+            <div class="text-field">
+                <input required id="pass" type="password" name="pass">
+                <span></span>
+                <label>Contrasena</label>
+            </div>
+            <input type="submit" value="Iniciar sesion">
+            <div class="register-link">
+                <span>Aun no tienes una cuenta? Creala <a href="../pages/register.html">aqui</a></span>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="../main.js"></script>
+    <script type="text/javascript" src="../json/users.json"></script>
+</body>
+
+</html>
